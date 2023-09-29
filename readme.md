@@ -6,13 +6,14 @@ Recently users have reported that they have been unable to mark items as complet
 
 A significant amount of feedback has been received requesting the ability to delete todo lists, and to be able to remove items from those lists. A couple of tests have also been introduced in [ListControllerTests.cs](./todo.web.test/ListControllerTests.cs) to help implement the new features. Unlike the case for deleting lists, the UI has not been updated to accomodate deleting individual todo items.
 
-Running `dotnet test` will reveal three failing tests. Each needs to be resolved without altering the contents of the existing unit test. The [list razor page](./todo.web/Views/List/List.cshtml) should also be updated to allow deleting individual todo items.
+**Running `dotnet test` will reveal three failing tests. Each needs to be resolved without altering the contents of the existing unit test. The [list razor page](./todo.web/Views/List/List.cshtml) should also be updated to allow deleting individual todo items.**
 
 The exam is independent, but intended to be completed in a short amount of time. Try to make minimal changes to the existing code to pass the failing tests. Be sure to consider the following while making your changes:
 
 * You are not expected to extensively refactor any element of the code, however opportunities for improvement should be noted.
 * The unit tests should remain as-written. If you feel a test could be improved upon, make note of it as something to be discussed.
 * Try to spot design patterns being used in the project, and whether they are they being used effectively.
+    * **You are also asked to provide a short text (up to 500 characters) identifying at least two design patterns used in the project and providing an explaination of how each design pattern is used and some of the benefits or drawbacks it brings.** This response will be used by the board to assess your ability to communicate effectively in writing and be part of the assessment for your ability to develop IM/IT system.
 * When todo.api is started, a SQLite database is created at ./AppData/todo.db. When running tests, the database is created in memory.
 * Test data is being generated in the `todo.data.TodoContext.Seed()` for both the automated testing and when the application is running. Each test is isolated and generates a fresh set of data.
 
@@ -38,3 +39,7 @@ dotnet run --project todo.web/todo.web.csproj
 
 ## Submitting Your Exam
 You may fork the repository on github, or submit the modified source files as an email attachment to &lt;contact info here&gt;.
+
+Your answer to the question identifying the design patterns must be included in your email submission or added to your github repository. If added to your github repository, you are required to indicate in your email where the file is located.
+
+**Important:** You must send an email to the identified contact prior to the deadline indicated in your invitation, the email must contain your submission or a link to your github repository. The date/time on the email or github file timestamps will be used to ensure the files were submitted before the deadline.
