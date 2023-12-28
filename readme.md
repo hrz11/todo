@@ -15,8 +15,6 @@ The exam is independent, but intended to be completed in a short amount of time.
 
 * You are not expected to extensively refactor any element of the code, however opportunities for improvement should be noted.
 * The unit tests should remain as-written. If you feel a test could be improved upon, make note of it as something to be discussed.
-* Try to spot design patterns being used in the project, and whether they are they being used effectively.
-    * **You are also asked to provide a short text (up to 500 words) identifying at least two design patterns used in the project and providing an explaination of how each design pattern is used and some of the benefits or drawbacks it brings.** This response will be used by the board to assess your ability to communicate effectively in writing and be part of the assessment for your ability to develop IM/IT system.
 * When todo.api is started, a SQLite database is created at ./AppData/todo.db. When running tests, the database is created in memory.
 * Test data is being generated in the `todo.data.TodoContext.Seed()` for both the automated testing and when the application is running. Each test is isolated and generates a fresh set of data.
 
@@ -43,8 +41,6 @@ dotnet run --project todo.web/todo.web.csproj
 ## Submitting Your Exam
 You may fork the repository on github, or submit the modified source files as an email attachment to &lt;contact info here&gt;.
 
-Your answer to the question identifying the design patterns must be included in your email submission or added to your github repository. If added to your github repository, you are required to indicate in your email where the file is located.
-
 **Important:** You must send an email to the identified contact prior to the deadline indicated in your invitation, the email must contain your submission or a link to your github repository. The date/time on the email or github file timestamps will be used to ensure the files were submitted before the deadline.
 
 ## Scénario
@@ -60,8 +56,6 @@ L’examen est indépendant, mais destiné à être complété dans un court lap
 
 * On ne s’attend pas à ce que vous refactorisiez considérablement les éléments du code, mais les possibilités d’amélioration doivent être notées.
 * Les tests unitaires doivent rester tels qu’ils sont écrits. Si vous pensez qu’un test pourrait être amélioré, notez-le comme quelque chose à discuter.
-* Essayez de repérer les modèles de conception utilisés dans le projet et de savoir s’ils sont utilisés efficacement.
-    * **Il vous est également demandé de fournir un court texte (jusqu’à 500 mots) identifiant au moins deux modèles de conception utilisés dans le projet et fournissant une explication de la façon dont chaque modèle de conception est utilisé et de certains des avantages ou inconvénients qu’il apporte** Cette réponse sera utilisée par le conseil d’administration pour évaluer votre capacité à communiquer efficacement par écrit et faire partie de l’évaluation de votre capacité de développer des systèmes de GI/TI.
 * Lorsque todo.api est démarré, une base de données SQLite est créée à l’adresse ./AppData/todo.db. Lors de l’exécution de tests, la base de données est créée en mémoire.
 * Les données de test sont générées dans `todo.data.TodoContext.Seed()` pour les tests automatisés et lorsque l’application est en cours d’exécution. Chaque test est isolé et génère un nouvel.
 
@@ -87,8 +81,6 @@ dotnet run --project todo.web/todo.web.csproj
 
 ## Soumission de votre examen
 Vous pouvez bifurquer le dépôt sur github, ou soumettre les fichiers sources modifiés en tant que pièce jointe à < informations de contact ici>. 
-
-Votre réponse à la question d’identifier les modèles de conception doivent être inclus dans votre soumission par courriel ou ajoutés à votre dépôt github. Si vous l’ajouté à votre dépôt github, vous devez indiquer dans votre courriel où se trouve le fichier. 
 
 **Important**: Vous devez envoyer un courriel au contact identifié avant la date limite indiquée dans votre invitation, le courriel doit contenir votre soumission ou un lien vers votre dépôt github. La date/heure du courriel ou du fichier github sera utilisée pour s’assurer que les fichiers ont été soumis avant la date limite. 
 
