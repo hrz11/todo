@@ -38,14 +38,20 @@ namespace todo.web.Controllers
         [HttpGet("/{culture:regex(fr)}/listes/{listId}/elements/{itemId}/supprimer")]
         public async Task<IActionResult> DeleteItem(int listId, int itemId)
         {
-            throw new NotImplementedException();
+            await _client.DeleteItem(itemId, listId);
+            
+            SetSuccessMessage();
+            return RedirectToAction(nameof(GetList), new { id = listId });
         }
 
         [HttpGet("/{culture:regex(en)}/lists/{id}/delete")]
         [HttpGet("/{culture:regex(fr)}/listes/{id}/supprimer")]
         public async Task<IActionResult> DeleteList(int id)
         {
-            throw new NotImplementedException();
+            await _client.DeleteList(id);
+            
+            SetSuccessMessage();
+            return RedirectToAction(nameof(GetLists));
         }
 
         [HttpGet("/{culture:regex(en)}/lists")]
