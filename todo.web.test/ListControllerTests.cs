@@ -44,6 +44,8 @@ namespace todo.web.test
 
             var redirectResult = result as RedirectToActionResult;
             redirectResult.RouteValues.Should().ContainKey("id");
+            // All Delete tests should assert that the deleted items does not exist in the database anymore or
+            // are marked as deleted in the database
         }
 
         [Fact]

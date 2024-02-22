@@ -40,13 +40,16 @@
 <div class="list-group">
     @foreach (var item in Model.Items)
     {
-        @if(item.IsComplete)
-        {
-            <a asp-action="ToggleItem" asp-route-itemId="@item.Id" class="list-group-item"><del>@item.Label</del></a>
-        }
-        else
-        {
-            <a asp-action="ToggleItem" asp-route-itemId="@item.Id" class="list-group-item">@item.Label</a>
-        }
+        <li class="list-group-item">
+            @if (item.IsComplete)
+            {
+                <a asp-action="ToggleItem" asp-route-itemId="@item.Id"><del>@item.Label</del></a>
+            }
+            else
+            {
+                <a asp-action="ToggleItem" asp-route-itemId="@item.Id">@item.Label</a>
+            }
+            <span class="pull-right"><a asp-action="DeleteItem" asp-route-listId="@Model.Id" asp-route-itemId="@item.Id">@Labels.Delete</a></span>
+        </li>
     }
 </div>
